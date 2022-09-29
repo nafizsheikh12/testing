@@ -1,5 +1,9 @@
 .notificationMain {
-  .notificationBg{
+  .notificationBg > div > div{
+    background-color: var(--background);
+    padding: 0 !important;
+  }
+  .custom-css11222333{
     background-color: var(--background);
   }
   .MuiGrid-root

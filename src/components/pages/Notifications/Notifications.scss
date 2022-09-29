@@ -2,9 +2,8 @@
   .custom-css11222333{
     background-color: var(--background);
   }
-  .notificationBg{
-    padding: 0 !important;
-	 background-color: var(--background);
+  .notificationBg > div > div{
+    padding: 0px;
   }
   .MuiGrid-root
     .MuiGrid-container
