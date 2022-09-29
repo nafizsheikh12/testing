@@ -38,7 +38,6 @@ const Notifications = () => {
                   </Grid>
 
                   <Grid item xs={12} className="notificationBg">
-                   <div> 
                     <TextField
                       label="Message"
                       multiline
@@ -48,7 +47,6 @@ const Notifications = () => {
                       fullWidth
                       required
                     />
-                    </div>
                   </Grid>
                   <Grid item xs={12} align="center">
                     <Button variant="primary m_btn" color="primary">
