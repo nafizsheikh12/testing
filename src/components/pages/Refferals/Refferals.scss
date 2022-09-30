@@ -1,11 +1,102 @@
 #Refferals{
-
+    .referalLine label{
+        line-height: 16px;
+    }
     .table>:not(:first-child) {
         border-top: 0px solid currentColor;
     }
     .refferalBtn{
-        padding: 12px 60px;
+        padding: 13px 60px;
         text-align: center;
     }
+
+}
+
+/*-----desktop laptop --------------  */
+@media (min-width:1700px) and (max-width:2000px) {
+
+    #Refferals .refferalBtn {
+        padding: 13px 90px !important;
+        text-align: center;
+        border-radius: 8px;
+    }
+}
+@media (min-width:1500px) and (max-width:1700px) {
+
+    #Refferals .refferalBtn {
+        padding: 13px 70px !important;
+        text-align: center;
+        border-radius: 8px;
+    }
+}
+
+@media (min-width:1261px) and (max-width:1401px) {
+
+    #Refferals .refferalBtn {
+        padding: 13px 50px !important;
+        text-align: center;
+        border-radius: 8px;
+    }
+}
+
+@media (min-width:1151px) and (max-width:1260px) {
+
+    #Refferals .refferalBtn {
+        padding: 13px 40px !important;
+        text-align: center;
+        border-radius: 8px;
+    }
+}
+
+@media (min-width:1041px) and (max-width:1150px) {
+
+    #Refferals .refferalBtn {
+        padding: 13px 30px !important;
+        text-align: center;
+        border-radius: 8px;
+    }
+}
+
+@media (min-width: 1024px){
+ 
+}
+
+@media (min-width:901px) and (max-width:1040px) {
+    #Refferals .refferalBtn {
+        padding: 13px 24px !important;
+        text-align: center;
+        border-radius: 8px;
+    }
+}
+
+/*-----tablets and ipads --------------  */
+@media (min-width: 769px) and (max-width:1023px){
+ 
+}
+
+@media(max-width:899px){
+ 
+}
+
+/*-----mobile phone --------------  */
+@media (max-width:768px){
+ 
+
+}
+
+/*----------extra small phone ------*/
+@media (max-width:600px){
+
+}
+
+/*-----small phone --------------  */
+@media (max-width: 468px){
+ 
+}
+
+
+
+
+@media (max-width:375px){
 
 }

@@ -53,10 +53,34 @@
                     
                         font-size: 18px;
                         font-weight: 500;
-                        line-height: 27px;
+                        line-height: 16px;
                         letter-spacing: 0em;
                         text-align: center;
                         border-radius: 10px;
+                    }
+                }
+
+                @media(min-width: 901px) and (max-width: 1040px){
+                    .button__wrapper{
+                       
+                        button{
+                        
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 30px;
+                            letter-spacing: 0em;
+                            text-align: center;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+                
+                @media(min-width: 1041px) and (max-width: 1169px){
+                    .button__wrapper{
+                       
+                        button{
+                            padding: 17px 35px !important
+                        }
                     }
                 }
                
@@ -76,58 +100,4 @@
     
 }
 
-.MuiGrid-root.MuiGrid-container.css-11lq3yg-MuiGrid-root {
-    margin-top: 2rem;
-}
-
-@media (min-width: 1024px) and (max-width:1099px){
-    .MuiGrid-root.MuiGrid-item.MuiGrid-grid-lg-8.css-z19094-MuiGrid-root {
-        width: 80% !important;
-    }
-}
-
-
-/*-----desktop laptop --------------  */
-@media (min-width: 1024px){
- 
-}
-
-@media (min-width:901px) and (max-width:1040px) {
-  
-}
-
-/*-----tablets and ipads --------------  */
-@media (min-width: 769px) and (max-width:1023px){
-    .MuiGrid-root.MuiGrid-item.MuiGrid-grid-lg-8.css-z19094-MuiGrid-root {
-        width: 100%;
-    }
-}
-
-@media(max-width:899px){
- 
-}
-
-/*-----mobile phone --------------  */
-@media (max-width:768px){
-    .MuiGrid-root.MuiGrid-item.MuiGrid-grid-lg-8.css-z19094-MuiGrid-root {
-        width: 100%;
-    }
-}
-
-/*----------extra small phone ------*/
-@media (max-width:600px){
-
-}
-
-/*-----small phone --------------  */
-@media (max-width: 468px){
- 
-}
-
-
-
-
-@media (max-width:375px){
-
-}
 

@@ -8,3 +8,32 @@
                     font-size: 50px;
           }
 }
+
+/*-----desktop laptop --------------  */
+@media (min-width: 1024px){
+
+}
+
+
+  /*-----tablets and ipads --------------  */
+@media (min-width: 769px) and (max-width:1023px){
+    .accountForm {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+
+/*-----mobile phone --------------  */
+@media (max-width:768px){
+    .accountForm {
+        max-width: 100% !important;
+    }
+}
+
+/*-----small phone --------------  */
+@media (max-width: 468px){
+    div#Account h3 {
+        font-size: 26px;
+    }
+ }   

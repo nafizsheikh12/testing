@@ -30,6 +30,7 @@ const PostBackTools = () => {
                         placeholder="https://track22ad.com/postback?click_id={aff_click_id}"
                         variant="outlined"
                         style={{ width: "100%" }}
+                        className="fieldPostTool"
                       />
                     </Grid>
 
@@ -50,7 +51,7 @@ const PostBackTools = () => {
             <h2>postback tokens</h2>
           </div>
         </div>
-        <Grid container style={{justifyContent: 'center'}}>
+        <Grid container style={{justifyContent: 'center'}} className="PostBackTokenBottom">
           <Grid item lg={8}>
             <Table>
               <thead>

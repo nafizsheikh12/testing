@@ -141,7 +141,7 @@ const Account = () => {
         </Typography>
         <Grid container spacing={4}>
           <Grid item xs={12}>
-            <Card className="MainForm accountForm">
+            <Card className="MainForm accountForm cssmuicard">
               <CardContent>
                 <form id="form" onSubmit={handleSubmit}>
                   {showError(error, errorMsg)}
@@ -215,7 +215,7 @@ const Account = () => {
                         value={country_id}
                       >
                         {countryList.map((country) => (
-                          <MenuItem key={country.id} value={country.id}>
+                          <MenuItem key={country.id} value={country.id} sx={{background:"var(--secondBackground)"}}>
                             {country.name}
                           </MenuItem>
                         ))}

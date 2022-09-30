@@ -52,8 +52,10 @@ button.btn.btn-primary.m_btn.notification-update-btn {
 }
 
 /*-----desktop laptop --------------  */
-@media (min-width: 1024px){
- 
+@media (min-width: 901px) and (max-width:1160px){
+  .widthfull {
+    width: 100px;
+}
 }
 
 @media (min-width:901px) and (max-width:1040px) {
@@ -66,7 +68,10 @@ button.btn.btn-primary.m_btn.notification-update-btn {
 }
 
 @media(max-width:899px){
- 
+ .notificationBtnParent{
+  display: flex;
+  gap: 20px;
+ }
 }
 
 /*-----mobile phone --------------  */

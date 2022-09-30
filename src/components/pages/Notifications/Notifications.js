@@ -12,18 +12,18 @@ const Notifications = () => {
     <Layout title="Notifications" className="notification">
       <div id="Notifications" className="notificationMain">
         <Grid container spacing={4}>
-          <Grid item lg={2} md={2} xs={12} className="notificationBtnParent">
+          <Grid item lg={2} md={3} xs={12} className="notificationBtnParent">
            
-              <div>
+              <Grid lg={12} sm={6} xs={6}>
                 <Button variant="primary outline__btn widthfull" color="primary">
                   Message
                 </Button>
-              </div>
-              <div>
+              </Grid>
+              <Grid lg={12} sm={6} xs={6}>
                 <Link to="/notifications/update">
                   <Button variant="btn btn-primary m_btn widthfull">Update</Button>
                 </Link>
-              </div>
+              </Grid>
             
           </Grid>
           <Grid item lg={8} md={8} xs={12}>

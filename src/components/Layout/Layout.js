@@ -338,7 +338,7 @@ const Layout = ({ title, children,className,subActive,activeNum }) => {
                       <Accordion.Body>
                       <ul>
                             <li><Link to='dashboard'>API</Link></li>
-                            <li><Link to='/tools/postback'>Own Post Backs</Link></li>
+                            <li id={subActive === 'Postback.tools' ? 'menuActive':''}><Link to='/tools/postback'>Own Post Backs</Link></li>
                         </ul>
                       </Accordion.Body>
                   </Accordion.Item>

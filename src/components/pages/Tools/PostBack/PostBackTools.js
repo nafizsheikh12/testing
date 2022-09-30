@@ -12,7 +12,7 @@ import { Button } from "react-bootstrap";
 
 const PostBackTools = () => {
   return (
-    <Layout title="Tools PostBack" className="referals">
+    <Layout title="Tools PostBack" className="developertools" subActive="Postback.tools" activeNum="8">
       <div id="PostBackTools">
         <div className="ManagerHeader">
           <h2>global postback</h2>
@@ -30,6 +30,7 @@ const PostBackTools = () => {
                         placeholder="https://track22ad.com/postback?click_id={aff_click_id}"
                         variant="outlined"
                         style={{ width: "100%" }}
+                        className="fieldPostTool"
                       />
                     </Grid>
 
@@ -50,8 +51,8 @@ const PostBackTools = () => {
             <h2>postback tokens</h2>
           </div>
         </div>
-        <Grid container style={{justifyContent: 'center'}}>
-          <Grid item lg={8}>
+        <Grid container style={{justifyContent: 'center'}} className="PostBackTokenBottom">
+          <Grid item lg={8} md={8} xs={12}>
             <Table>
               <thead>
                 <tr>

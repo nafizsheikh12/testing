@@ -15,10 +15,6 @@
     margin-bottom: 12px !important;
     border: none;
     background: transparent !important;
-    h2{
-      button{
-      }
-    }
   }
   .table_head {
     font-size: 15px !important;
@@ -36,8 +32,8 @@
     // background: var(--background);
     padding: 0;
     .accordion-hr {
-      margin-top: -19px;
-      margin-bottom: 1rem;
+      margin-top: 0;
+      margin-bottom:0;
       border: 0;
       border-top: 1px solid rgba(0, 0, 0, 0.1);
     }

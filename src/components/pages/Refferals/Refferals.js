@@ -45,6 +45,7 @@ const Refferals = () => {
                           variant="outlined"
                           style={{ width: "100%" }}
                           disabled
+                          className='referalLine'
                         />
                       </Grid>
 

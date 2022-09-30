@@ -12,6 +12,7 @@
 
 
 
+
 /*-----desktop laptop --------------  */
 @media (min-width: 1024px){
  
@@ -21,10 +22,6 @@
   
 }
 
-/*-----tablets and ipads --------------  */
-@media (min-width: 769px) and (max-width:1023px){
- 
-}
 
 @media(max-width:899px){
  
@@ -34,6 +31,12 @@
 @media (max-width:768px){
   .accountForm{ width: 100% !important}
 }
+
+/*-----tablets and ipads --------------  */
+@media (min-width: 769px) and (max-width:1023px){
+  .accountForm{ width: 100% !important}
+}
+
 
 /*----------extra small phone ------*/
 @media (max-width:600px){
