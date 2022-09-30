@@ -7,6 +7,7 @@ import {
   MenuItem,
   TextField,
   Typography,
+  MenuList
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import Layout from "../../Layout/Layout";
@@ -201,7 +202,7 @@ const Account = () => {
                         onChange={handleChange}
                       />
                     </Grid>
-                    <Grid xs={12} sm={12} item>
+                    <Grid xs={12} sm={12} item className="Country_menu">
                       <FormLabel sx={{ mb: 2 }}>Country</FormLabel>
                       <TextField
                         select
@@ -215,9 +216,11 @@ const Account = () => {
                         value={country_id}
                       >
                         {countryList.map((country) => (
-                          <MenuItem key={country.id} value={country.id} sx={{background:"var(--secondBackground)"}}>
+                         
+                          <MenuItem  key={country.id} value={country.id} sx={{background:"var(--secondBackground)"}}>
                             {country.name}
                           </MenuItem>
+                         
                         ))}
                       </TextField>
                     </Grid>
