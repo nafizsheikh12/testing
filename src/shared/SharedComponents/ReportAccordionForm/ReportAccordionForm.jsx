@@ -90,10 +90,10 @@ const ReportAccordionForm = () => {
       <form onSubmit={handleSubmit}>
         <Card className="mangeCard">
           <CardContent>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} >
               <Grid item xs={12} md={4} lg={4}>
                 <h5>offer</h5>
-                <FormControl fullWidth>
+                <FormControl fullWidth className="labelReport">
                   <InputLabel id="demo-simple-select-label">Offer</InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
@@ -112,7 +112,7 @@ const ReportAccordionForm = () => {
               </Grid>
               <Grid item xs={12} md={4} lg={4}>
                 <h5>country</h5>
-                <FormControl fullWidth>
+                <FormControl fullWidth className="labelReport">
                   <InputLabel id="demo-simple-select-label">
                     choose one
                   </InputLabel>
@@ -132,7 +132,7 @@ const ReportAccordionForm = () => {
               </Grid>
               <Grid item xs={12} md={4} lg={4}>
                 <h5>affiliate</h5>
-                <FormControl fullWidth>
+                <FormControl fullWidth className="labelReport">
                   <InputLabel id="demo-simple-select-label">
                     choose one
                   </InputLabel>
@@ -152,7 +152,7 @@ const ReportAccordionForm = () => {
               </Grid>
               <Grid item xs={12} md={4} lg={4}>
                 <h5>advertiser</h5>
-                <FormControl fullWidth>
+                <FormControl fullWidth className="labelReport">
                   <InputLabel id="demo-simple-select-label">All</InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
@@ -170,7 +170,7 @@ const ReportAccordionForm = () => {
               </Grid>
               <Grid item xs={12} md={4} lg={4} className="margin__top-input">
                 <h5>conversion status</h5>
-                <FormControl fullWidth>
+                <FormControl fullWidth className="labelReport">
                   <InputLabel id="demo-simple-select-label">All</InputLabel>
                   <Select
                     labelId="demo-simple-select-label"

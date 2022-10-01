@@ -20,13 +20,15 @@
         .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
           color: var(--77__to__A5);
         }
-        .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+        #demo-simple-select-label.Mui-focused{
           color: var(--77__to__A5);
+          padding-right:8px ;
+          background-color: var(--background);
         }
-        .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+        .MuiOutlinedInput-notchedOutline {
           border-radius: 15px;
           border: 1px solid var(--77__to__A5);
-          .css-1ftyaf0 {
+          legend {
             color: var(--77__to__A5);
           }
         }
@@ -49,7 +51,7 @@
         .button__wrapper {
           text-align: right;
           button {
-            padding: 12px 95px;
+            padding: 8px 95px;
             width: 90%;
             text-align: center;
             font-size: 18px;
