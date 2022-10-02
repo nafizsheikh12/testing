@@ -5,6 +5,7 @@ import photo1 from '../../../../assets/Placeholder.png';
 const  Notifications = () => {
   return (
     <div className="table_data">
+     <div className='table-size-fix'> 
       <Table responsive="lg">
         <thead style={{ position: "sticky", top: "0" }}>
           <tr style={{ position: "sticky", top: "0" }}>
@@ -59,6 +60,7 @@ const  Notifications = () => {
           </tr>
         </tbody>
       </Table>
+      </div>
     </div>
   );
 }

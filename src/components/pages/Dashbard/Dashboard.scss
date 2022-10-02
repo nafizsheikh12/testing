@@ -1,10 +1,21 @@
 #Dasboard{
+    .customPadding{
+        background-color: var(--background);
+        margin: 30px auto;
+        padding: 16px 30px 0px 30px;
+    }
+    .ChartPadding{
+        background-color: var(--background);
+        margin: 30px auto;
+        padding: 0px 30px 20px 30px;
+    }
     button.btn.btn-primary.m_btn.resBtnSend {
         padding: 0px 32px;
     }
     .Dashboard__Counter{
         .counter__item{
             padding: 15px 20px ;
+            height: 130px;
             h3{
             font-size: 30px;
             font-weight: 600;
@@ -47,11 +58,49 @@
             }
             
         }
+
+        @media (min-width:1200px) and (max-width:1685px) {
+            .counter__item{
+                
+                h3{
+                font-size: 22px !important;
+                margin-right: -2px ;
+                font-weight: 600;
+                line-height: 45px;
+                letter-spacing: 0px;
+                display: flex;
+                align-items: baseline;
+                justify-content: space-between;
+                color: var(--white__to_D2);
+                }
+               
+        }
+
+       }
+       @media (min-width:901px) and (max-width:985px) {
+        .counter__item{
+            
+            h3{
+            font-size: 20px !important;
+            margin-right: -2px ;
+            font-weight: 600;
+            line-height: 45px;
+            letter-spacing: 0px;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            color: var(--white__to_D2);
+            }
+           
+         }
+
+        }  
+
     }
     #dashboardChart {
         background-color: var(--background);
         margin: 30px auto;
-        padding: 16px 30px 20px 30px;
+      
        
         .datetoData{
             padding: 11px 15px !important;
@@ -175,6 +224,86 @@
                 stroke: var(--secondBackground);
             }
         // }
+        @media (min-width:100px) and (max-width:899px) {
+            .datetoData.resBtnDate {
+                padding: 10px 0 !important;
+                
+            }
+            .but_dashboardd {
+                justify-content: normal;
+            }
+        }
+        @media (max-width:600px) {
+            .ChartPadding{
+                padding: 0 12px 17px 7px;
+            }
+        }
+        @media (min-width:400px) and (max-width:460px) {
+               .datetoData {
+                font-size: 14px !important;
+            }
+            .resBtnSend {
+                font-size: 13px !important;
+            }
+        }
+        @media (min-width:400px) and (max-width:435px) {
+            .recharts-responsive-container {
+                .recharts-wrapper {
+                    .recharts-default-legend {
+                    
+                        .legend-item-0 {
+                            margin-right: 1px !important;
+                            .recharts-surface {
+                                margin-right: 1px ;
+                                background: linear-gradient(0deg, #4C0000, #4C0000),
+                                    linear-gradient(0deg, #1a1818, #4C0000);
+                            }
+                        }
+    
+                        .legend-item-1 {
+                            margin-right: 1px ;
+                            .recharts-surface {
+                                margin-right: 1px !important;
+                                background: linear-gradient(0deg, #A5DEFF, #A5DEFF),
+                                    linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                            }
+    
+    
+                        }
+    
+                        .legend-item-2 {
+                            margin-right: 1px ;
+                            .recharts-surface {
+                                margin-right: 1px !important;
+                                background: linear-gradient(0deg, #F0C64D, #F0C64D),
+                            }
+                        }
+                        .legend-item-3 {
+                            margin-right: 1px;
+                            .recharts-surface {
+                                margin-right: 1px !important;
+                                background: linear-gradient(0deg, #159F96, #159F96),
+                            }
+                        }
+    
+                        .legend-item-4 {
+                            .recharts-surface {
+                                margin-right: 1px !important;
+                                background: linear-gradient(0deg, #1A55FD, #1A55FD),
+                                    // linear-gradient(0deg, #FFFFFF, #FFFFFF);
+                            }
+    
+    
+    
+                        }
+                    }
+                                    .recharts-legend-item-text{
+                                        color: var(--22__to__CC) !important;
+                                    }
+                }
+            }
+         }
+        
     }
     .dashbord__tables{
         padding-top: 30px;
@@ -231,7 +360,26 @@
                 } 
             }
         }
+
+        .table-size-fix > div {
+            height: 100%;
+        }
+        .table-size-fix {
+            height: 100%;
+        }
     }
+    @media(min-width: 300px) and (max-width:402px){
+       .datetoData.resBtnDate {
+            padding: 10px 0 !important;
+            font-size: 13px !important;
+        }
+    
+   .resBtnSend {
+        padding: 0px 21px !important;
+        font-size: 13px;
+    }
+
+   }
 }
 
 @media only screen and (max-width: 1200px) {

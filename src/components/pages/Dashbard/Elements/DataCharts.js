@@ -7,6 +7,7 @@ import {
   Line,
   ResponsiveContainer,
   Tooltip,
+  Responsive,
   XAxis,
   YAxis,
 } from "recharts";
@@ -126,26 +127,28 @@ const DataCharts = () => {
   return (
     <>
       <div id="dashboardChart" className="adminDashboard">
-        <div className="dashboard__Chart__header__content">
+        <div className="dashboard__Chart__header__content backg customPadding">
           <Grid container>
-            <Grid lg={2} md={12} xs={12}>
+            <Grid lg={2} md={2} xs={12}>
               <h2 className="h_dashboard">Dashboard</h2>
             </Grid>
             
-            <Grid lg={10} md={12} xs={12} className="but_dashboardd">
-              <Button className="datetoData resBtnDate">
+            <Grid lg={10} md={10} xs={12} className="but_dashboardd">
+              <a href="#" className="datetoData resBtnDate">
                 2022-07-02 - 2022-07-02
-              </Button>
+              </a>
               <Button variant="primary m_btn resBtnSend" >
                 Send
               </Button>
             </Grid>
           </Grid>
         </div>
-      <ResponsiveContainer width='100%' height={500}>
+       <div className="ChartPadding chartcontainer">
+       <ResponsiveContainer width='100%' height={500}>
           <ComposedChart
             data={monthData}
             margin={{ top: 0, left: -28, right: 0, bottom: 0 }}
+            className="coposedChart"
           >
             <CartesianGrid stroke="#f5f5f5" />
             {/* <XAxis dataKey="day" />
@@ -174,6 +177,7 @@ const DataCharts = () => {
         <Grid className="h6_dashboard prbtext" lg={5} md={5} xs={12}>
               <p>STATISTICS FOR THE LAST 30 DAYS</p>
         </Grid>
+        </div>
       </div>
     </>
   );

@@ -5,6 +5,7 @@ import photo1 from '../../../../assets/Placeholder.png';
 const  OfferTable = () => {
   return (
     <div className="table_data">
+     <div className='table-size-fix'>
       <Table responsive>
         <thead >
           <tr style={{ whiteSpace: "nowrap",  }}>
@@ -60,6 +61,7 @@ const  OfferTable = () => {
           </tr>
         </tbody>
       </Table>
+     </div> 
     </div>
   );
 }
