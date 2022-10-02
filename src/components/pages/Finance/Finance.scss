@@ -26,6 +26,7 @@
     }
     h2{
       margin-top: 0 !important;
+      margin-left: 0;
     }
   }
   .table > :not(:first-child) {
@@ -116,33 +117,9 @@
   //     }
   //   }
   // }
-}
 
 
-/*-----------responsive csss ---------------------*/
-
-
-
-/*-----desktop laptop --------------  */
-@media (min-width: 1024px){
-
-}
-
-/*-----tablets and ipads --------------  */
-@media (min-width: 769px) and (max-width:1023px){
-   
-}
-
-@media(max-width:899px){
- 
-}
-
-/*-----mobile phone --------------  */
-@media (max-width:768px){
-   
-}
-
-
+  
 /*---------- small phone ------*/
 @media (max-width:600px){
   .manageFinaceHeader.pt-3.px-3.header button {
@@ -158,24 +135,35 @@
 /*----- extra small phone --------------  */
 @media (max-width: 470px){
   .manageFinaceHeader.pt-3.px-3.header button {
-    font-size: 11px !important;
+    font-size: 13px !important;
+    padding: 8px 8px;
+}
+.manageFinaceHeader.pt-3.px-3.header h2 {
+  font-size: 17px !important;
+  line-height: 1px;
+}
+}
+
+@media (min-width:400px) and (max-width:436px){
+  .manageFinaceHeader.pt-3.px-3.header button {
+    font-size: 12px !important;
+    padding: 3px 3px;
 }
 .manageFinaceHeader.pt-3.px-3.header h2 {
   font-size: 14px !important;
 }
 }
 
-@media (max-width:375px){
+@media (min-width:100px) and (max-width:399px){
   .manageFinaceHeader.pt-3.px-3.header button {
     font-size: 10px !important;
+    padding: 0px 3px;
 }
 .manageFinaceHeader.pt-3.px-3.header h2 {
-  font-size: 12px !important;
+  font-size: 13px !important;
+    margin-left: 0;
+    line-height: 15px !important;
 }
 }
-
-
-@media (min-width:901px) and (max-width:1040px) {
-  
 
 }

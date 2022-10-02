@@ -53,7 +53,7 @@ const FinanceInvoice = () => {
                     <Grid container spacing={2}>
                       <Grid item xs={12} md={4} lg={4}>
                         <h5>affiliate</h5>
-                        <FormControl fullWidth>
+                        <FormControl fullWidth >
                           <InputLabel id="demo-simple-select-label">
                             choose one
                           </InputLabel>
@@ -74,7 +74,9 @@ const FinanceInvoice = () => {
 
                       <Grid item xs={12} md={4} lg={4}>
                         <h5>Date</h5>
-                        <InputDatePicker />
+                        <InputDatePicker
+                           
+                        />
                       </Grid>
 
                       <Grid item xs={12} md={4} lg={4}>

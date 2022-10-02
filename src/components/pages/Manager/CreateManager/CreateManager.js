@@ -122,7 +122,7 @@ const CreateManager = () => {
           Create Manager
         </Typography>
         <Grid container spacing={4}>
-          <Grid item xs={12}>
+          <Grid item xs={12} md={12}>
             <Card className="MainForm CreateManagerForm">
               <CardContent>
                 <form id="form" onSubmit={handleSubmit}>

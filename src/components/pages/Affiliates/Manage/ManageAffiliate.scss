@@ -9,7 +9,14 @@
         box-shadow: none !important;
         .accordion-item:first-of-type .accordion-button {
           border-radius: 10px 10px 0px 0px;
-      }
+         }
+        .label-select{
+          .MuiTextField-root {
+            label{
+              line-height: 13px;
+            }
+          }
+        } 
         h5 {
           font-size: 18px;
           font-weight: 600;
@@ -19,16 +26,16 @@
           color: var(--22__to__CC);
           margin-bottom: 15px;
         }
-        .css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+        .MuiInputLabel-root {
           color: var(--77__to__A5);
         }
-        .css-1sumxir-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+        .Mui-focused {
           color: var(--77__to__A5);
         }
-        .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+        .MuiOutlinedInput-notchedOutline {
           border-radius: 5px;
           border: 1px solid var(--77__to__A5);
-          .css-1ftyaf0 {
+         legend {
             color: var(--77__to__A5);
           }
         }
@@ -50,7 +57,7 @@
         .button__wrapper {
           text-align: center;
           button {
-            padding: 12px 63px;
+            padding: 11px 63px;
             width: 90%;
             font-size: 18px;
             font-weight: 500;
@@ -67,6 +74,11 @@
               
                background-color: transparent;
              color: #7040ff;
+            }
+          }
+          @media(min-width: 901px) and (max-width:1040px){
+            button {
+              padding: 11px 28px !important;
             }
           }
         }

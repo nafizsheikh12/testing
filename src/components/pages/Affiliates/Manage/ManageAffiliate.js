@@ -116,7 +116,7 @@ const ManageAffiliate = () => {
             <form>
               <Card className="mangeCard">
                 <CardContent>
-                  <Grid container spacing={2} columns={11}>
+                  <Grid container spacing={2} columns={11} className="label-select">
                     <Grid item xs={12} md={3} lg={3}>
                       <h5>ID</h5>
                       <TextField

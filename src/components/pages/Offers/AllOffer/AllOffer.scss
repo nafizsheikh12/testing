@@ -10,6 +10,18 @@
       padding-bottom:0;
     }
   }
+  .allofferLabel{
+     .MuiTextField-root label {
+       background-color: var(--background) !important;
+       line-height: 13px;
+    }
+
+    label.MuiInputLabel-shrink {
+      padding: 0px 5px;
+      line-height: 17px;
+      color: var(--77__to__A5);
+    }
+  } 
 }
 
 

@@ -92,14 +92,14 @@ const ReportAccordionForm = () => {
           <CardContent>
             <Grid container spacing={2} >
               <Grid item xs={12} md={4} lg={4}>
-                <h5>offer</h5>
+                <h5 className="mb-2">offer</h5>
                 <FormControl fullWidth className="labelReport">
                   <InputLabel id="demo-simple-select-label">Offer</InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     // value={age}
-                    label="Offer Id"
+                    label="Offer"
                     name = 'offer_id'
                     onChange={handleChange}
                   >
@@ -111,7 +111,7 @@ const ReportAccordionForm = () => {
                 </FormControl>
               </Grid>
               <Grid item xs={12} md={4} lg={4}>
-                <h5>country</h5>
+                <h5 className="mb-2">country</h5>
                 <FormControl fullWidth className="labelReport">
                   <InputLabel id="demo-simple-select-label">
                     choose one
@@ -120,7 +120,7 @@ const ReportAccordionForm = () => {
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     // value={age}
-                    label="Status"
+                    label="choosone"
                     name="country_id"
                     onChange={handleChange}
                   >
@@ -131,7 +131,7 @@ const ReportAccordionForm = () => {
                 </FormControl>
               </Grid>
               <Grid item xs={12} md={4} lg={4}>
-                <h5>affiliate</h5>
+                <h5 className="mb-2">affiliate</h5>
                 <FormControl fullWidth className="labelReport">
                   <InputLabel id="demo-simple-select-label">
                     choose one
@@ -140,7 +140,7 @@ const ReportAccordionForm = () => {
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     // value={age}
-                    label="Staus"
+                    label="Choosene"
                     name="user_id"
                     onChange={handleChange}
                   >
@@ -151,14 +151,14 @@ const ReportAccordionForm = () => {
                 </FormControl>
               </Grid>
               <Grid item xs={12} md={4} lg={4}>
-                <h5>advertiser</h5>
+                <h5 className="mb-2">advertiser</h5>
                 <FormControl fullWidth className="labelReport">
                   <InputLabel id="demo-simple-select-label">All</InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     // value={age}
-                    label="Advertiser"
+                    label="All"
                     name="advertiser_id"
                     onChange={handleChange}
                   >
@@ -169,14 +169,14 @@ const ReportAccordionForm = () => {
                 </FormControl>
               </Grid>
               <Grid item xs={12} md={4} lg={4} className="margin__top-input">
-                <h5>conversion status</h5>
+                <h5 className="mb-2">conversion status</h5>
                 <FormControl fullWidth className="labelReport">
                   <InputLabel id="demo-simple-select-label">All</InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
                     id="demo-simple-select"
                     // value={age}
-                    label="Status"
+                    label="All"
                     name="status"
                     onChange={handleChange}
                   >
@@ -187,7 +187,7 @@ const ReportAccordionForm = () => {
                 </FormControl>
               </Grid>
               <Grid item xs={12} md={4} lg={4}>
-                <h5>Date</h5>
+                <h5 className="mb-2">Date</h5>
                 <InputDatePicker />
               </Grid>
 

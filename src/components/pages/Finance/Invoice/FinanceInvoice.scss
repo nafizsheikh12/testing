@@ -1,6 +1,7 @@
 #FinanceInvoice {
   .ManageForm {
     form {
+     
       .mangeCard {
         background-color: var(--background);
         padding: 15px;
@@ -91,6 +92,7 @@
     }
     h2{
       margin-top: 0;
+      margin-left: 0;
     }
   }
   .table > :not(:first-child) {

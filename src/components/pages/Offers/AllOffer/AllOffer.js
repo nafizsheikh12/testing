@@ -9,7 +9,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import { Loading, showError, showSuccess } from "../../../../utils/messages";
 import UserAvata from "../../../../assets/avata.png";
-
+import { FormControl,InputLabel } from "@mui/material";
 
 import Tooltip from "@mui/material/Tooltip";
 import UserLogo from "../../../../assets/Rectangle 42.png";
@@ -122,12 +122,16 @@ const ManageAffiliate = () => {
                     <Grid container spacing={2} columns={11}>
                       <Grid item xs={12} lg={3} md={3}>
                         <h5>ID</h5>
-                        <TextField
-                          label="Search By ID"
-                          placeholder="Search By ID"
-                          variant="outlined"
-                          style={{ width: "100%" }}
-                        />
+                            
+                          
+                           <TextField
+                           fullWidth
+                             label="Search By ID"
+                             placeholder=""
+                             variant="outlined"
+                             style={{ width: "100%" }}
+                           />
+                        
                       </Grid>
                       <Grid item xs={12} lg={3} md={3}>
                         <h5>Name</h5>

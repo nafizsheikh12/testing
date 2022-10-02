@@ -135,6 +135,7 @@ const ManageFinance = () => {
             <Button
               variant="primary duplicate__m_btn"
               onClick={() => setModalShow(true)}
+              className="ManageFinanceBtn"
             >
               add a payment mathod
             </Button>

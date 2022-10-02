@@ -179,7 +179,7 @@ const ApplicationAffiliate = () => {
                           labelId="demo-simple-select-label"
                           id="demo-simple-select"
                           // value={age}
-                          label="Staus"
+                          label="chooseone"
                           // onChange={handleChange}
                         >
                           <MenuItem value="all">All</MenuItem>

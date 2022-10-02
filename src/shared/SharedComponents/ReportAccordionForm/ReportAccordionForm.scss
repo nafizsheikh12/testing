@@ -4,8 +4,12 @@
     line-height: 40px;
     width: 100%;
   }
+  .MuiOutlinedInput-root{
+    color: var(--77__to__A5);
+  }
   .labelReport  label{
-    line-height: 13px;
+    color: var(--77__to__A5);
+    width: fit-content;
   } 
 
   @media only screen and (max-width: 1696px) {

@@ -76,7 +76,7 @@ const ImageUpload = ({sendFileTo}) => {
   }, []);
 
   return (
-    <section className="container">
+    <section className="">
       <div {...getRootProps({ className: "dropzone" })}>
         <input type='file' name='photo' {...getInputProps()} />
         {/* <p>Drag 'n' drop some files here, or click to select files</p> */}

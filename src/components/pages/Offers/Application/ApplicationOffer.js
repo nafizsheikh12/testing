@@ -55,7 +55,7 @@ const ApplicationOffer = () => {
                           labelId="demo-simple-select-label"
                           id="demo-simple-select"
                           // value={age}
-                          label="Country"
+                          label="chooseone"
                           // onChange={handleChange}
                         >
                           <MenuItem value="Us">Us</MenuItem>
@@ -73,7 +73,7 @@ const ApplicationOffer = () => {
                           labelId="demo-simple-select-label"
                           id="demo-simple-select"
                           // value={age}
-                          label="Status"
+                          label="chooseone"
                           // onChange={handleChange}
                         >
                           <MenuItem value="all">All</MenuItem>
@@ -93,7 +93,7 @@ const ApplicationOffer = () => {
                           labelId="demo-simple-select-label"
                           id="demo-simple-select"
                           // value={age}
-                          label="Staus"
+                          label="chooseone"
                           // onChange={handleChange}
                         >
                           <MenuItem value="Active">Active</MenuItem>

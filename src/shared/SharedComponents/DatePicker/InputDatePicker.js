@@ -14,11 +14,10 @@ const InputDatePicker = () => {
   console.log(value)
   return (
   
-      <Stack  direction="column" alignItems="flex-start" spacing={6}>
-       <DatePicker/>
-       <DatePicker format="yyyy-MM-dd HH:mm" />
-    <DatePicker format="yyyy-MM-dd HH:mm:ss" />
-   </Stack> 
+      <>
+       <DatePicker className="date__input"
+                           fullWidth/>
+      </> 
   
   );
 };
