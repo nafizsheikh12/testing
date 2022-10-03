@@ -3,7 +3,7 @@
 import * as React from 'react';
 import {useState,useEffect} from 'react';
 
-import Box from '@mui/material/Box';
+import {Box,Grid} from '@mui/material';
 import TextField from '@mui/material/TextField';
 import './Login2.scss';
 import { Button } from '@mui/material';
@@ -86,47 +86,60 @@ const handleSubmit = (event) => {
 };
   return (
     <div className='login__page'>
-      <Login2Header />
-
-      <div id="Login2">
-        <Box  onSubmit={handleSubmit} component="form" noValidate autoComplete="off">
-        {showError(error, errorMsg)}
-                  {showLoading(loading)}
-                  {redirectUser()}
-          <h2 className="mb-3">Welcome Back</h2>
-          <TextField
-            id="outlined-email-input"
-            label="Email"
-            type="email"
-            autoComplete="current-password"
-            fullWidth
-            required
-            name="email"
-          />
-          <br />
-          <TextField
-            id="outlined-password-input"
-            label="Password"
-            type="password"
-            autoComplete="current-password"
-            fullWidth
-            required
-              name="password"
-          />
-          <br />
-          <Button type='submit'  variant="contained" fullWidth>
-            Login
-          </Button>
-          <Button
-            variant="contained"
-            fullWidth
-            className="mt-2 bg-secondary text-white"
-          >
-            Forget password?
-          </Button>
-        </Box>
+       <div class="skewed-accent-bg sm:visible"></div>
+       <div class="main-content">
+         <Grid  className='login-card'>
+           <div class="self-center logo-container">
+               <h2>Papping</h2>
+           </div>
+           <div class="flex flex-row justify-center login-content">
+               <h1>Sign in to your account</h1>
+           </div>
+          <div id="Login2">
+                <form  onSubmit={handleSubmit} component="form" noValidate autoComplete="off">
+                {showError(error, errorMsg)}
+                          {showLoading(loading)}
+                          {redirectUser()}
+                  <label className="mb-2">Email</label>
+                  <TextField
+                    id="outlined-email-input"
+                    label="Email"
+                    type="email"
+                    autoComplete="current-password"
+                    fullWidth
+                    required
+                    name="email"
+                  />
+                  <br />
+                  <br />
+                  <label className="mb-2">Password</label>
+                  <TextField
+                    id="outlined-password-input"
+                    label="Password"
+                    type="password"
+                    autoComplete="current-password"
+                    fullWidth
+                    required
+                    name="password"
+                  />
+                  <div class="forgot-password">
+                     <a class="ef-link" href="/auth/recovery">Forgot Your Password?</a>
+                  </div>
+                  <br />
+                  <Button type='submit' className='signinbtn' variant="contained">
+                     Sign In
+                  </Button>
+                </form>
+                <hr/>
+                <div class="signup">
+                      <span><b>Don't have an account?</b> Create one as: </span>
+                </div>
+              <div class="mt-7 ned-hlp">
+                <span>Need Help? <a class="ef-link" href="mailto:operations@gurumedia.com">Contact Support</a></span>
+             </div>
+           </div>
+          </Grid> 
       </div>
-      <p className='text-muted text-center py-5 footer'> Copyright © 2022 CPAping LLC | All Rights Reserved</p>
     </div>
   );
 }

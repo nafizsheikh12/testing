@@ -102,6 +102,7 @@ import ManagerAffiliateManage from './managerPages/Affiliates/Manage/ManageAffil
 import ManagerAccount from './managerPages/Account/Account';
 import ManagerNotification from './managerPages/Notifications/Notifications';
 
+import Login3 from './pages/Login2/Login3';
 const Main = (props) => {
   return (
     <div>
@@ -109,7 +110,7 @@ const Main = (props) => {
         {/* <Route path="/login" exact component={Login} /> */}
        
       
-        <Route path="/f" exact component={Login2} />
+        <Route path="/f" exact component={Login3} />
 
         {/*affilate dashboard route */}
   

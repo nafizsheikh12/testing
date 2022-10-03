@@ -1,108 +1,150 @@
 .login__page{
-  background-color: var(--secondBackground);
-  min-height: 100vh;
-  display: grid;
+  .skewed-accent-bg {
+    width: 119%;
+    height: 100vh;
+    position: fixed;
+    background-color:lightblue;
+    left: 805px;
+    transform: skewX(337deg);
+    z-index: -1;
+    visibility: hidden;
+ }
+ .main-content {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-#Login2 {
-  width: 40%;
-  margin: 0 auto;
-  width: 40%;
-  margin: 100px auto;
-  padding: 103px 15px;
-background: var(--background);
 
-  form {
+ .login-card {
+  background: #fff;
+  padding: 40px 60px;
+  display: flex;
+  margin: 40px 20px;
+  flex-direction: column;
+ }
+
+ .login-content h1 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #1e3557;
+  letter-spacing: 0;
+  line-height: 35px;
+  margin-bottom: 40px;
+  font-family: "Raleway",sans-seri;
+}
+
+form  {
+ 
+      input {
+       padding: 6px 8px;
+       font-size: 13px;
+       height: 25px;
+      }
+      
+      label {
+       font-size: 14px;
+       line-height: 9px;
+       }
+       label.MuiInputLabel-shrink{
+        line-height: 23px;
+       }
+      
+       .forgot-password {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        color: #4270D3;
+        margin-top: 9px;
+    }
+    
+    .forgot-password a {
+        text-decoration: none;
+        color: #4270D3;
+        font-size: 15px;
+    }
+
+    .signinbtn{
+      min-width: 45px;
+      font-size: 14px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: auto;
+      background: #1e3557;
+      color: #fff;
+      padding: 5px 21px;
+      margin-bottom: 20px;
+    }
+       
+  }
+
+  hr {
+    color: #9ea7b6;
+  }
+
+  .signup {
+    color: #1e3557;
     display: flex;
     flex-direction: column;
-    margin: 0 40px;
-    align-items: center;
+    padding: 9px 0px;
+}
+
+.signup span {
+    font-size: 14px;
+    color: #1e3557 !important;
+}
+
+.signup span b {
+    color: #1e3557;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.ned-hlp{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.ned-hlp span {
+    font-size: 15px;
+}
+.ned-hlp span a {
+    font-size: 14px;
+    color: #4270d3;
+}
+
+@media (min-width: 640px) {
+  .skewed-accent-bg{
+    visibility: visible;
+  }
+  .login-card {
+      width: 650px;
+      box-sizing: border-box;
+      border: 1px solid var(--ef-brand-blue-38);
+      border-radius: 15px;
+   
+      box-shadow: 0px 0px 0.7px rgb(0 0 0 / 17%), 0px 0px 1.8px rgb(0 0 0 / 12%), 0px 0px 3.4px rgb(0 0 0 / 10%), 0px 0px 6px rgb(0 0 0 / 9%), 0px 0px 11.3px rgb(0 0 0 / 7%), 0px 0px 27px rgb(0 0 0 / 5%);
+  }
+  
+  }
+@media (max-width: 639px) {
+.main-content {
+    background-color: #1e3557;
   }
 }
 
-#Login2Header {
-  header {
-    margin-right: 0px;
-    padding: 30px 100px;
-    background: var(--background);
-    ul {
-      text-align: right;
-      li {
-        display: inline-block;
-        margin-left: 50px;
-        .login__btn {
-          color: black;
-          font-size: 18px;
-          padding: 13px 38px;
-          &:hover {
-            border-radius: 105px;
-            border: 1px solid;
-          }
-        }
-        .m_btn {
-          padding: 16px 32px;
-          border-radius: 100px;
-          font-size: 18px;
-          font-weight: 600;
-          line-height: 18px;
-          letter-spacing: -0.02em;
-          text-align: left;
-          color: white;
-          &:hover {
-            color: #7040ff !important;
-          }
-        }
-      }
-    }
-  }
-  
- 
+
 }
+
+
+ 
+
 .footer{
   background: var(--background);
-}
-
-
-/*-----desktop laptop --------------  */
-@media (min-width: 1024px){
- 
-}
-
-@media (min-width:901px) and (max-width:1040px) {
-  
-}
-
-/*-----tablets and ipads --------------  */
-@media (min-width: 769px) and (max-width:1023px){
-  div#Login2 {
-    width: 90%;
-}
-}
-
-@media(max-width:899px){
- 
-}
-
-/*-----mobile phone --------------  */
-@media (max-width:768px){
-  div#Login2 {
-    width: 90%;
-}
-}
-
-/*----------extra small phone ------*/
-@media (max-width:600px){
-
-}
-
-/*-----small phone --------------  */
-@media (max-width: 468px){
- 
-}
-
-
-
-
-@media (max-width:375px){
-
 }
 
