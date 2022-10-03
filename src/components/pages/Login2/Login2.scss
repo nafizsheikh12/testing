@@ -62,7 +62,7 @@ form  {
     .forgot-password a {
         text-decoration: none;
         color: #4270D3;
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .signinbtn{
@@ -90,6 +90,7 @@ form  {
     display: flex;
     flex-direction: column;
     padding: 9px 0px;
+    align-items: center;
 }
 
 .signup span {
@@ -107,7 +108,6 @@ form  {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
 }
 
 .ned-hlp span {
@@ -138,7 +138,19 @@ form  {
   }
 }
 
-
+@media (min-width: 280px) and (max-width:420px) {
+   form .forgot-password a {
+    text-decoration: none;
+    color: #4270D3;
+    font-size: 11px !important;
+   }
+   .ned-hlp span {
+    font-size: 12px;
+   }
+   .ned-hlp span a {
+    font-size: 12px;
+   }
+  }
 }
 
 
